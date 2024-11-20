@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 # Base URL for the Inventory Service
-INVENTORY_SERVICE_URL = "http://inventory-service"
+INVENTORY_SERVICE_URL = "http://localhost:8080"
 
 @app.route('/placeOrder', methods=['POST'])
 def place_order():
